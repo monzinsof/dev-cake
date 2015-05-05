@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url("font-awesomee.css");
+
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #555;
+	height: 100%;
+	width: 100%!important;
+	background-color: #33383d;
+	margin: 0;
+	padding:0;
+}
+
+.btn {
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	transition: background .2s;
+	padding: 9px 12px;
+	border: 0;
+}
+
+.btn-default {
+	color: #fff;
+	border: 0;
+	background-color: #c0c2c7;
+	border-color: #c0c2c7;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+	color: #fff;
+	background-color: #a7aab1;
+	border-color: #c0c2c7;
+}
+
+.orb-form { outline: none; }
+
+.orb-form header {
+	display: block;
+	letter-spacing:-1px;
+	padding: 0 10px 10px;
+	margin:0 -10px;
+	border-bottom: 5px solid rgba(0,0,0,.1);
+	font-size: 1.7em;
+	font-weight: 400;
+}
+
+.orb-form fieldset {
+	display: block;
+	padding: 10px 0;
+	border: none;
+}
+
+
+.orb-form section { margin-bottom: 10px; }
+
+.orb-form footer {
+	display: block;
+	padding: 10px;
+	border-top: 5px solid rgba(0,0,0,.1);
+	margin: 0 -10px;
+}
+.orb-form footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.orb-form .label {
+	display: block;
+	margin-bottom: 6px;
+	line-height: 19px;
+	font-weight: 400;
+}
+
+.orb-form .label.col {
+	margin: 0;
+	padding-top: 10px;
+}
+
+.orb-form .note {
+	margin-top: 6px;
+	padding: 0 1px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #999;
+}
+
+.orb-form .input,
+.orb-form .select,
+.orb-form .textarea,
+.orb-form .radio,
+.orb-form .checkbox,
+.orb-form .toggle,
+.orb-form .button {
+	position: relative;
+	display: block;
+}
+
+.orb-form .input input,
+.orb-form .select select,
+.orb-form .textarea textarea {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	font-weight: 600;
+	height: 38px;
+	padding: 8px 10px;
+	outline: none;
+	border-width: 2px;
+	border-radius: 3px;
+	border-style: solid;
+	background: #fff;
+	appearance: normal;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.orb-form .progress {
+	float: right;
+	height:36px;
+	font-weight:300;
+	font-size:2em;
+	color: #82b964;
+	  background-color: transparent;
+  -webkit-box-shadow: none;
+
+          box-shadow: none;
+}
+
+.orb-form .icon-append,
+.orb-form .icon-prepend {
+	position: absolute;
+	top: 2px;
+	width: 29px;
+	height: 34px;
+	font-size: 1.3em;
+	line-height: 29px;
+	text-align: center;
+}
+
+.orb-form .icon-append {
+	right: 5px;
+	padding-left: 3px;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.orb-form .icon-prepend {
+	left: 5px;
+	padding-right: 3px;
+	border-right-width: 2px;
+	border-right-style: solid;
+}
+
+.orb-form .row { margin: 0 -15px; }
+
+.orb-form .row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.orb-form .col {
+	float: left;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+.orb-form .col-4 { width: 33.33%; }
+.orb-form .col-8 { width: 66.67%; }
+
+.orb-form .input input,
+
+.orb-form .icon-prepend {
+	border-color: #c0c2c7;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+
+.orb-form .icon-append,
+.orb-form .icon-prepend { color: #c0c2c7; }
+
+.orb-form *,
+.orb-form *:after,
+.orb-form *:before {
+	margin: 0;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+.standalone-page-wrapper {
+	position: absolute;
+	background-color: #fff;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	padding: 0;
+}
+
+.colorful-page-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	background-image: url(/./app/webroot/img/1.png);
+	/* try 2.png,3.png...12.png */
+	background-size: 30%;
+}
+
+.error-top-block {
+	width: 100%;
+	padding: 20px;
+	height: 245px;
+	background-image: url(img1.png);
+	/* try 2.png,3.png...12.png */
+	background-size: 30%;
+}
+
+
+/* Login and Lock Screen Pages  iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiimportantttttttt*/
+
+
+
+.center-block {
+	width: 70%;
+	width: 530px;
+	height: 80%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.center-block .using-social-header {
+	text-align: center;
+	font-size: 0.85em;
+	letter-spacing: 2px;
+	color: #fff;
+	text-transform: uppercase
+}
+
+.copyrights {
+	margin-top: 10px;
+	font-size: 0.85em;
+	text-align: center;
+}
+
+.center-block .copyrights { color: #fff; }
+
+.login-block,
+.lock-block {
+	position: relative;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	background: #fff;
+	border-radius: 11px;
+}
+
+.login-block header .image-block,
+.lock-block header .image-block {
+	display: block;
+	margin: 0 auto;
+	max-width: 330px;
+}
+
+.lock-block header .image-block img {
+	display: inline-block;
+	max-width: 100%;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px rgba(255,255,255,0.5)
+}
+
+.login-block header .image-block img {
+	display: inline-block;
+	max-width: 100%;
+	border: none;
+}
+
+.login-block header,
+.lock-block header {
+	padding: 20px 10px 10px;
+	background: #f1f1f1;
+	text-align: center;
+	border-bottom: 0;
+	font-size: 1.9em;
+	font-weight: 300;
+	margin: 0 -20px 10px -20px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.login-block header small,
+.lock-block header small {
+	font-size: 12px;
+	display: block
+}
+
+.login-block footer,
+.lock-block footer {
+	margin: 0 -20px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	background: #454b52;
+}
+
+.login-block footer .btn,
+.lock-block footer .btn { float: right }
+
+.control-wrap {
+    width: 266px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#login .lock {
+    width: 100px;
+    float: left;
+    margin-top: 28px;
+    font-size: 110px;
+    vertical-align: middle;
+}
+#login .lock i {
+    vertical-align: middle;
+}
